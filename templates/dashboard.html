@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome, {{ user.username }}!</h2>
+<p>Your email: {{ user.email }}</p>
+<a href="{{ url_for('groups') }}">View Your Groups</a><br>
+<a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
